@@ -1,0 +1,173 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.VoteProcess {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.VoteStep {
+  width: 125px;
+  height: 125px;
+  background: #c9d9ff;
+  border-radius: 50%;
+  color: white;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: background 1s ease-in-out;
+  font-weight: bold;
+}
+
+.VoteStep.active {
+  background: #477eff;
+}
+
+.VoteStep>label {
+  font-size: 40px;
+}
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  margin-bottom: 30px;
+  background-color: #477eff;
+  color: white;
+  font-weight: bold;
+  align-items: center;
+}
+
+.StatusContainer {
+  display: flex;
+  justify-content: end;
+  gap: 5px;
+}
+
+.NextStepButton {
+  color: #477eff;
+  background-color: white;
+  height: 50px;
+  width: 150px;
+  margin-top: 100px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid #477eff;
+  font-size: 18px;
+}
+
+.NextStepButton:hover {
+  color: white;
+  background-color: #477eff;
+  height: 50px;
+  width: 150px;
+  margin-top: 100px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid #477eff;
+  font-size: 18px;
+}
+
+.OwnerStatus, .VoterStatus {
+  border-radius: 10px;
+  background: white;
+  width: 40px;
+  height: 40px;
+  font-size: 13px;
+  color: #477eff;
+  font-weight: bold;
+  line-height: 37px;
+  text-align: center;
+}
+
+.HideComponent {
+  display: none;
+}
+
+.ActionContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  gap: 50px;
+}
+
+.Action {
+  border: 2px solid #477eff;
+  border-radius: 10px;
+  height: 250px;
+  width: 400px;
+  background-color: #477eff;
+  color: white;
+  overflow-y: auto;
+}
+
+.AddressInput, .ProposalInput {
+  width: 350px;
+}
+
+.VoterButtons, .ProposalButtons {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.VoterButton, .ProposalButton {
+  width: 100px;
+  color: inherit;
+  border: 1px solid white;
+  font: inherit;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+}
+
+.VoterButton:hover, .ProposalButton:hover {
+  color: #477eff;
+}
+
+#VoterResult, #ProposalAdding {
+  margin-top: 15px;
+}
+
+.Proposal {
+  border-bottom: 1px solid white;
+  font-size: 20px;
+  height: 50px;
+  margin-top: 10px;
+}
+
+#winnerDiv {
+  margin-top: 50px;
+  font-weight: bold;
+}
+
+.VoteButton {
+  margin-left: 15px;
+  height: 25px;
+  width: 40px;
+}
